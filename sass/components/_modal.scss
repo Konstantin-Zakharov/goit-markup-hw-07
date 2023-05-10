@@ -33,7 +33,7 @@
   }
 }
 
-.modal-close-btn {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -59,10 +59,10 @@
   }
 }
 
-.modal-close-icon {
+.modal__close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .modal-close-btn:focus & {
+  .modal__close-btn:focus & {
     fill: var(--accent-color);
   }
 }
@@ -73,7 +73,7 @@
   padding: 40px;
 }
 
-.contact-form-title {
+.contact-form__title {
   display: block;
   text-align: center;
   margin-bottom: 12px;
@@ -82,11 +82,11 @@
   letter-spacing: 0.03em;
 }
 
-.contact-form-label {
+.contact-form__label {
   display: block;
 }
 
-.contact-form-name {
+.contact-form__name {
   display: block;
   margin-bottom: 4px;
   font-weight: 400;
@@ -96,24 +96,24 @@
   color: var(--text-color);
 }
 
-.contact-form-wrapper {
+.contact-form__wrapper {
   position: relative;
   margin-bottom: 10px;
 }
 
-.contact-form-icon {
+.contact-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .contact-form-input:focus+& {
+  .contact-form__input:focus+& {
     fill: var(--accent-color);
   }
 }
 
-.contact-form-input {
+.contact-form__input {
   display: block;
   padding-left: 42px;
   width: 100%;
@@ -128,12 +128,12 @@
   }
 }
 
-.contact-form-label-message {
+.contact-form__label-message {
   display: block;
   margin-bottom: 20px;
 }
 
-.contact-form-message {
+.contact-form__message {
   display: block;
   padding: 12px 16px;
   width: 448px;
@@ -156,7 +156,7 @@
   }
 }
 
-.contact-form-checkbox-wrapper {
+.contact-form-checkbox {
   position: relative;
   margin-bottom: 30px;
 }
@@ -170,11 +170,11 @@
   color: var(--text-color);
 }
 
-.policy-title-link {
+.policy-title__link {
   color: var(--accent-color);
 }
 
-.contact-form-checkbox-input {
+.contact-form-checkbox__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -202,12 +202,12 @@
   height: 15px;
   display: inline-block;
 
-  .contact-form-checkbox-input:checked+& {
+  .contact-form-checkbox__input:checked+& {
     background-image: url(../images/svg/icon-check.svg);
     fill: var(--accent-color);
   }
 
-  .contact-form-checkbox-input:focus+& {
+  .contact-form-checkbox__input:focus+& {
     outline: 1px solid;
   }
 }
